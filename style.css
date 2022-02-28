@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+}
+
+.container-slider{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+
+
+/* left part */
+
+.slide-left{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transition: transform 0,4s linear;
+}
+
+.slide-left > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    color: white;
+    text-align: center;
+}
+
+.slide-left h2{
+    font-size: 160%;
+    margin-bottom: 5%;
+
+}
+
+.color-1-slide{
+    background: linear-gradient(45deg, purple, white);
+}
+.color-2-slide{
+    background: linear-gradient(45deg, orange, white);
+}
+.color-3-slide{
+    background: linear-gradient(45deg, red, white);
+}
+
+/* right part */
+
+.slide-right{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 30%;
+
+    transition: transform 0.4s linear;
+}
+
+.slide-right > div{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image-1{
+    background-image: url("img/praha4.jpg");
+}
+.image-2{
+    background-image: url("img/černýMost.png");
+}
+.image-3{
+    background-image: url("img/Pankrác.jpg");
+}
+
+
+/*icon arrows */
+
+.icon-arrow-buttons .arrow{
+    /* border: 2px solid red; */
+    position: absolute;
+    z-index: 1000;
+    width: 5%;
+    top: 70%;
+    left: 30%;
+    height: 20%;
+}
+
+
+.arrow img{
+    width: 70%;
+}
+
+.arrow-down img{
+    transform: translateX(-85%);
+    border-radius: 20%;
+    cursor: pointer;
+
+}
+
+.arrow-down img:hover{
+    border: 1px solid black;
+}
+
+.arrow-up img{
+    /* transform: translateY(-100%); */
+    transform: translate(-15%, -100%);
+    border-radius: 20%;
+    cursor: pointer;
+    
+}
+
+.arrow-up img:hover{
+    border: 1px solid black;
+}
+
+
+
+
+
